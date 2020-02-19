@@ -1,0 +1,3 @@
+com\issuetracker\issuetracker\service\IssueService.class
+com\issuetracker\issuetracker\controller\IssueController.class
+com\issuetracker\issuetracker\IssueTrackerApplication.class
