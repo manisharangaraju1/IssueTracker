@@ -108,21 +108,21 @@ class IssueList extends React.Component {
   }
 
   createIssue(newIssue) {
-      // fetch('/api/issues', {
-      //     method: 'POST',
-      //     headers: {'Content-Type': 'application/json'},
-      //     body: JSON.stringify(newIssue),
-      // }).then(response => response.json()).then(
-      //     updatedIssue => {
-      //         updatedIssue.created = new Date(updatedIssue.created);
-      //         if(updatedIssue.completionDate) 
-      //             updatedIssue.completionDate = new Date(updatedIssue.completionDate);
-      //         const newIssues = this.state.issues.concat(updatedIssue);
-      //         this.loadData();
-      //     }
-      // ).catch(err => {
-      //     console.log("Error in sending data to server: " + err.message);
-      // });
+      fetch('http://localhost:8080/issues', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(newIssue),
+      }).then(response => response.json()).then(
+          updatedIssue => {
+              updatedIssue.created = new Date(updatedIssue.created);
+              if(updatedIssue.completionDate) 
+                  updatedIssue.completionDate = new Date(updatedIssue.completionDate);
+              const newIssues = this.state.issues.concat(updatedIssue);
+              this.loadData();
+          }
+      ).catch(err => {
+          console.log("Error in sending data to server: " + err.message);
+      });
       let newIssues = this.state.issues.slice();
       newIssues.push(newIssue);
       this.setState({issues: newIssues});

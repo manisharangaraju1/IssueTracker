@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8455331-b9f4-4ccf-b3c2-0f53f569569f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../issue-tracker-front-end/issue-tracker-front-end" beforeDir="false" afterPath="$PROJECT_DIR$/../issue-tracker-front-end/issue-tracker-front-end" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../issue-tracker-front-end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../issue-tracker-front-end/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuetracker/issuetracker/controller/IssueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuetracker/issuetracker/controller/IssueController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuetracker/issuetracker/service/IssueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuetracker/issuetracker/service/IssueService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/issuetracker/issuetracker/controller/IssueController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuetracker/issuetracker/controller/IssueController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/issuetracker/issuetracker/model/Issue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/issuetracker/issuetracker/service/IssueService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuetracker/issuetracker/service/IssueService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +82,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
