@@ -16,23 +16,24 @@ import java.util.Arrays;
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 @SpringBootApplication (exclude = SecurityAutoConfiguration.class)
 public class IssueTrackerApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(IssueTrackerApplication.class, args);
-	}
-
-//	public static void main(String[] args)
-//	{
-//		ApplicationContext ctx = SpringApplication.run(IssueTrackerApplication.class, args);
 //
-//		String[] beanNames = ctx.getBeanDefinitionNames();
+//	public static void main(String[] args) {
+//		SpringApplication.run(IssueTrackerApplication.class, args);
 //
-//		Arrays.sort(beanNames);
-//
-//		for (String beanName : beanNames)
-//		{
-//			System.out.println(beanName);
-//		}
 //	}
+
+	public static void main(String[] args)
+	{
+		ApplicationContext ctx = SpringApplication.run(IssueTrackerApplication.class, args);
+
+		String[] beanNames = ctx.getBeanDefinitionNames();
+
+		Arrays.sort(beanNames);
+
+		for (String beanName : beanNames)
+		{
+			System.out.println(beanName);
+		}
+	}
 
 }

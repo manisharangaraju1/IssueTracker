@@ -15,9 +15,8 @@ import java.util.List;
 @SpringBootConfiguration
 public class IssueService {
     private List<Issue> issues = new ArrayList<>(Arrays.asList(
-        new Issue(1,"New", "Manisha", new Date(), "2", "No Consistency"),
-        new Issue(2,"New", "Nikhita", new Date(), "0", "Too Awesome"),
-        new Issue(3,"New", "Vaibhav", new Date(), "-1", "Too Talented")));
+        new Issue(1,"New", "Manisha", new Date(), "2", "Issue 1"),
+        new Issue(2,"New", "Nikhita", new Date(), "0", "Issue 2")));
 
     public List<Issue> getAllIssues() {
         return issues;
